@@ -81,7 +81,7 @@ def ai_action():
     #For AI auto-completion: stops the auto-completion process if max progress or max fails is reached
     stop = False
     state_dict = game.get_state() | game.initial_state()
-    if state_dict.get("progress") >= state_dict.get("progressMax") or state_dict.get("failCount") >= state_dict.get("failMax"):
+    if state_dict.get("progress") >= state_dict.get("progressMax") or state_dict.get("failCount") >= state_dict.get("failCountMax"):
         stop = True
 
     return {"lastAction": action_obj.action_name,
