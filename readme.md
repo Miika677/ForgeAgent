@@ -34,6 +34,6 @@ API_KEY=yourAPIKeyHere
 - Actions can be repeated 1-10 times.  
 - Heat range is checked at the start of each individual repeat.
 
-## Video Demo
+## Video Demo on YouTube
 
 [![Watch the demo](https://img.youtube.com/vi/C8vgLsjBs3w/0.jpg)](https://www.youtube.com/watch?v=C8vgLsjBs3w)
