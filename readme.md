@@ -6,12 +6,13 @@ Inspired by OldSchool Runescape's Giants' Foundry minigame: https://oldschool.ru
 ## AI Implementation
 
 The basic loop for the AI Agent goes as follows:
-1. Observe game state
-2. Select action from a constrained toolset
-3. Adjusts strategy based on predicted outcome
-4. Outputs structured JSON actions for execution
+1. Observe game state from injected game environment values
+2. Select action with its repeats and intensity from a constrained toolset after reasoning for risk and reward
+3. Outputs structured JSON actions for execution in game environment
+4. Update game state, inject it and proceed with next step until the game is completed.
 
 The goal is to complete the forging process efficiently while managing heat constraints, dynamic objectives, and failure penalties.
+The system effectively forms a closed-loop LLM-driven decision policy operating in an environment with randomized action outcomes, constrained actions and dynamic objectives.
 
 ## How to Run
 
