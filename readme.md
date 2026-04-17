@@ -3,6 +3,16 @@
 Complete the forging of a sword with the help of an AI agent, either with single steps or to full completion.  
 Inspired by OldSchool Runescape's Giants' Foundry minigame: https://oldschool.runescape.wiki/w/Giants%27_Foundry
 
+## AI Implementation
+
+The basic loop for the AI Agent goes as follows:
+1. Observe game state
+2. Select action from a constrained toolset
+3. Adjusts strategy based on predicted outcome
+4. Outputs structured JSON actions for execution
+
+The goal is to complete the forging process efficiently while managing heat constraints, dynamic objectives, and failure penalties.
+
 ## How to Run
 
 1. Create a .env file with your Google Gemini API key:  
