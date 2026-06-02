@@ -1,19 +1,26 @@
-# Forging Game SPA with AI Agent Helper
+# Forging Agent: LLM-Controlled Decision System in a Game Environment
 
-Complete the forging of a sword with the help of an AI agent, either with single steps or to full completion.  
-Inspired by OldSchool Runescape's Giants' Foundry minigame: https://oldschool.runescape.wiki/w/Giants%27_Foundry
+A single-page game simulation where an LLM-driven agent operates inside a constrained, stochastic environment to optimize a forging process.
 
-## AI Implementation
+The focus of this project is not the game itself, but the closed-loop agent system:
+observation → reasoning → action → environment feedback → repeat
+
+Inspired loosely by OldSchool RuneScape’s Giants’ Foundry minigame:
+https://oldschool.runescape.wiki/w/Giants%27_Foundry
+
+## AI Implementation & Architecture
 
 The basic loop for the AI Agent goes as follows:
 1. Observe game state from injected game environment values
 2. Select action with its repeats and intensity from a constrained toolset after reasoning for risk and reward
 3. Outputs structured JSON actions for execution in game environment
-4. Update game state, inject it and proceed with next step until the game is completed.
+4. Update game state with selected action and restart the loop until the game is finished.
 
 The goal is to complete the forging process efficiently while managing heat constraints, dynamic objectives, and failure penalties.
 
 The system effectively forms a closed-loop LLM-driven decision policy operating in an environment with randomized action outcomes, constrained actions and dynamic objectives.
+
+
 
 ## How to Run
 
