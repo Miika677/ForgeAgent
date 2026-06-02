@@ -13,10 +13,11 @@ https://oldschool.runescape.wiki/w/Giants%27_Foundry
 The basic loop for the AI Agent goes as follows:
 1. Observe game state from injected game environment values
 2. Select action with its repeats and intensity from a constrained toolset after reasoning for risk and reward
-3. Outputs structured JSON actions for execution in game environment
-4. Update game state with selected action and restart the loop until the game is finished.
+3. Output structured JSON actions for execution in game environment
+4. Update game state with selected action and restart the loop until the game is finished
 
 The goal is to complete the forging process efficiently while managing heat constraints, dynamic objectives, and failure penalties.
+As each action increases the progress by a randomized amount (3-5), the agent must decide the most efficient yet the least risky way of combining repeats and intensity for the chosen action.
 
 The system effectively forms a closed-loop LLM-driven decision policy operating in an environment with randomized action outcomes, constrained actions and dynamic objectives.
 
