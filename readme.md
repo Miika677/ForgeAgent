@@ -31,7 +31,7 @@ API_KEY=yourAPIKeyHere
 2. Execute run.py
 3. Visit http://localhost:8000 in your browser
 
-## How to Play
+## Game Rules
 
 - Goal: Reach 120 progress before 5 fails. 5 fails = game over.  
 - Progress only increases when performing the desired action within its valid heat range.  
@@ -42,9 +42,9 @@ API_KEY=yourAPIKeyHere
 
 | Action     | Effect                                      | Notes                         |
 |------------|--------------------------------------------|-------------------------------|
-| Hammer     | Valid heat 100-140, lowers temp            |                               |
-| Grind      | Valid heat 50-100, raises temp             |                               |
-| Polish     | Valid heat 10-50, lowers temp              |                               |
+| Hammer     | Valid heat 100-140, lowers temp            |  Randomly increases progress if in valid range.                             |
+| Grind      | Valid heat 50-100, raises temp             |  Randomly increases progress if in valid range.                                |
+| Polish     | Valid heat 10-50, lowers temp              |  Randomly increases progress if in valid range.                                |
 | Lava Dunk  | Raises temp                                 | No progress, no fail          |
 | Quench     | Lowers temp                                 | No progress, no fail          |
 
