@@ -23,6 +23,11 @@ As each action increases the progress by a randomized amount (3-5), the agent mu
 
 The system effectively forms a closed-loop LLM-driven decision policy operating in an environment with randomized action outcomes, constrained actions and dynamic objectives.
 
+### Tech Stack
+- FastAPI
+- Vanilla JS
+- Google Gemini API
+- Bootstrap
 
 
 ## How to Run
