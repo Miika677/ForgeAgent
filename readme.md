@@ -10,6 +10,10 @@ This AI Agent-environment interaction happens fully in the backend. The frontend
 Inspired loosely by OldSchool RuneScape’s Giants’ Foundry minigame:
 https://oldschool.runescape.wiki/w/Giants%27_Foundry
 
+### Video Demo on YouTube
+
+[![Watch the demo](https://img.youtube.com/vi/C8vgLsjBs3w/0.jpg)](https://www.youtube.com/watch?v=C8vgLsjBs3w)
+
 ## AI Implementation & Architecture
 
 The basic loop for the AI Agent goes as follows:
@@ -60,7 +64,3 @@ API_KEY=yourAPIKeyHere
 - Speed (1-2) increases progress gained per action.  
 - Actions can be repeated 1-10 times.  
 - Heat range is checked at the start of each individual repeat.
-
-## Video Demo on YouTube
-
-[![Watch the demo](https://img.youtube.com/vi/C8vgLsjBs3w/0.jpg)](https://www.youtube.com/watch?v=C8vgLsjBs3w)
