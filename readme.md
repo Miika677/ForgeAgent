@@ -4,6 +4,7 @@ A single-page game simulation where an LLM-driven agent operates inside a constr
 
 The focus of this project is not the game itself, but the closed-loop agent system:
 observation → reasoning → action → environment feedback → repeat
+This AI Agent-environment interaction happens fully in the backend; the frontend is just for displaying game state and allowing the user to interact with the game state too.
 
 Inspired loosely by OldSchool RuneScape’s Giants’ Foundry minigame:
 https://oldschool.runescape.wiki/w/Giants%27_Foundry
